@@ -17,11 +17,30 @@
 				<h1>JunkAway Pro</h1>
 				<ul>
 					<li><a href="/">Home</a></li>
-					<li><a href="/residential">Residential</a></li>
+					<li class="dropdown">
+						<a href="/residential">Residential ▼</a>
+						<div class="dropdown-content">
+							<a href="/residential">All Residential</a>
+							<a href="/specialized-cleanouts">Hoarding & Evictions</a>
+						</div>
+					</li>
 					<li><a href="/commercial">Commercial</a></li>
-					<li><a href="/same-day">Same Day</a></li>
+					<li class="dropdown">
+						<a href="/same-day">Services ▼</a>
+						<div class="dropdown-content">
+							<a href="/same-day">Same Day Service</a>
+							<a href="/heavy-items">Heavy Items</a>
+							<a href="/recycling">Recycling</a>
+						</div>
+					</li>
 					<li><a href="/pricing">Pricing</a></li>
-					<li><a href="/about">About</a></li>
+					<li class="dropdown">
+						<a href="/about" class="active">More ▼</a>
+						<div class="dropdown-content">
+							<a href="/about">About Us</a>
+							<a href="/service-areas">Service Areas</a>
+						</div>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -270,8 +289,43 @@
 				transition: color 0.3s;
 			}
 			
-			nav a:hover {
+			nav a:hover,
+			nav a.active {
 				color: #3498db;
+			}
+			
+			.dropdown {
+				position: relative;
+			}
+			
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background: #34495e;
+				min-width: 200px;
+				box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+				z-index: 1000;
+				border-radius: 5px;
+				top: 100%;
+				left: 0;
+				padding: 0.5rem 0;
+			}
+			
+			.dropdown-content a {
+				color: white;
+				padding: 0.8rem 1.2rem;
+				text-decoration: none;
+				display: block;
+				transition: background 0.3s;
+			}
+			
+			.dropdown-content a:hover {
+				background: #2c3e50;
+				color: #3498db;
+			}
+			
+			.dropdown:hover .dropdown-content {
+				display: block;
 			}
 			
 			main {
