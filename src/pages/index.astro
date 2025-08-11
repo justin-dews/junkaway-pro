@@ -10,227 +10,330 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Junk Removal Denton TX | Denton Junk Pickup | JunkAway Pro</title>
 		<meta name="description" content="Professional junk removal Denton TX services. Same-day Denton junk pickup, waste removal, and junk hauling. Licensed, insured, eco-friendly. Get your free quote!" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 	</head>
-	<body>
-		<header>
-			<nav>
-				<h1>JunkAway Pro</h1>
-				<ul>
-					<li><a href="/">Home</a></li>
-					<li class="dropdown">
-						<a href="/residential">Residential ▼</a>
-						<div class="dropdown-content">
-							<a href="/residential">All Residential</a>
-							<a href="/specialized-cleanouts">Hoarding & Evictions</a>
-						</div>
-					</li>
-					<li><a href="/commercial">Commercial</a></li>
-					<li class="dropdown">
-						<a href="/same-day">Services ▼</a>
-						<div class="dropdown-content">
-							<a href="/same-day">Same Day Service</a>
-							<a href="/heavy-items">Heavy Items</a>
-							<a href="/recycling">Recycling</a>
-						</div>
-					</li>
-					<li><a href="/pricing">Pricing</a></li>
-					<li class="dropdown">
-						<a href="/about">More ▼</a>
-						<div class="dropdown-content">
-							<a href="/about">About Us</a>
-							<a href="/service-areas">Service Areas</a>
-						</div>
-					</li>
-				</ul>
+	<body class="bg-gray-50">
+		<header class="bg-white shadow-lg sticky top-0 z-50">
+			<nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex justify-between items-center py-4">
+					<div class="flex items-center">
+						<h1 class="text-3xl font-bold text-red-600">JunkAway Pro</h1>
+						<span class="ml-2 text-sm text-gray-600">Denton's #1 Junk Removal</span>
+					</div>
+					<div class="hidden md:flex items-center space-x-6">
+						<a href="tel:940-555-0123" class="flex items-center text-red-600 font-bold text-lg hover:text-red-700">
+							<i class="fas fa-phone mr-2"></i>
+							(940) 555-0123
+						</a>
+						<a href="#quote" class="bg-red-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-red-700 transition duration-300">
+							Free Quote
+						</a>
+					</div>
+				</div>
+				<div class="border-t border-gray-200">
+					<ul class="flex flex-wrap justify-center space-x-8 py-3 text-sm font-medium">
+						<li><a href="/" class="text-gray-700 hover:text-red-600 transition duration-300">Home</a></li>
+						<li class="dropdown relative group">
+							<a href="/residential" class="text-gray-700 hover:text-red-600 transition duration-300 flex items-center">
+								Residential <i class="fas fa-chevron-down ml-1 text-xs"></i>
+							</a>
+							<div class="dropdown-content absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+								<a href="/residential" class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 border-b border-gray-100">All Residential</a>
+								<a href="/specialized-cleanouts" class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600">Hoarding & Evictions</a>
+							</div>
+						</li>
+						<li><a href="/commercial" class="text-gray-700 hover:text-red-600 transition duration-300">Commercial</a></li>
+						<li class="dropdown relative group">
+							<a href="/same-day" class="text-gray-700 hover:text-red-600 transition duration-300 flex items-center">
+								Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
+							</a>
+							<div class="dropdown-content absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+								<a href="/same-day" class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 border-b border-gray-100">Same Day Service</a>
+								<a href="/heavy-items" class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 border-b border-gray-100">Heavy Items</a>
+								<a href="/recycling" class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600">Recycling</a>
+							</div>
+						</li>
+						<li><a href="/pricing" class="text-gray-700 hover:text-red-600 transition duration-300">Pricing</a></li>
+						<li class="dropdown relative group">
+							<a href="/about" class="text-gray-700 hover:text-red-600 transition duration-300 flex items-center">
+								More <i class="fas fa-chevron-down ml-1 text-xs"></i>
+							</a>
+							<div class="dropdown-content absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+								<a href="/about" class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 border-b border-gray-100">About Us</a>
+								<a href="/service-areas" class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600">Service Areas</a>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</nav>
 		</header>
 		
 		<main>
-			<section class="hero">
-				<h2>Junk Removal Denton TX</h2>
-				<p>Professional waste removal and junk hauling services in Denton, Texas. Same-day pickup available for your home or business.</p>
-				<a href="/pricing" class="cta-button">Get Free Quote Today</a>
+			<!-- Hero Section -->
+			<section class="hero relative bg-gradient-to-r from-red-600 to-red-700 text-white py-20">
+				<div class="absolute inset-0 bg-black opacity-20"></div>
+				<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+					<div class="max-w-3xl mx-auto">
+						<h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+							Fast & Reliable<br>
+							<span class="text-yellow-300">Junk Removal</span><br>
+							in Denton, TX
+						</h1>
+						<p class="text-xl md:text-2xl mb-8 text-red-100">
+							Professional waste removal and junk hauling services.<br class="hidden md:block">
+							Same-day pickup available for your home or business.
+						</p>
+						<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+							<a href="#quote" class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition duration-300 shadow-lg transform hover:-translate-y-1">
+								<i class="fas fa-calculator mr-2"></i>
+								Get Free Quote Today
+							</a>
+							<a href="tel:940-555-0123" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-red-600 transition duration-300">
+								<i class="fas fa-phone mr-2"></i>
+								Call (940) 555-0123
+							</a>
+						</div>
+						<div class="mt-12 flex justify-center space-x-8 text-sm">
+							<div class="flex items-center">
+								<i class="fas fa-check-circle text-green-400 mr-2"></i>
+								Licensed & Insured
+							</div>
+							<div class="flex items-center">
+								<i class="fas fa-clock text-green-400 mr-2"></i>
+								Same-Day Service
+							</div>
+							<div class="flex items-center">
+								<i class="fas fa-recycle text-green-400 mr-2"></i>
+								Eco-Friendly
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 			
-			<section class="services">
-				<h3>Our Services</h3>
-				<div class="service-grid">
-					<div class="service-item">
-						<h4>Residential Junk Removal Denton</h4>
-						<p>Furniture removal, appliance removal, garage cleanouts, and estate cleanouts throughout Denton TX.</p>
+			<!-- Services Section -->
+			<section class="py-20 bg-white">
+				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+					<div class="text-center mb-16">
+						<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Services</h2>
+						<p class="text-xl text-gray-600 max-w-3xl mx-auto">Professional junk removal services tailored to your needs in Denton, TX</p>
 					</div>
-					<div class="service-item">
-						<h4>Commercial Debris Removal</h4>
-						<p>Office cleanouts, construction debris removal, and bulk trash removal for Denton businesses.</p>
+					<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+						<div class="service-item bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition duration-300 border border-gray-100">
+							<div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+								<i class="fas fa-home text-red-600 text-2xl"></i>
+							</div>
+							<h3 class="text-xl font-bold text-gray-900 mb-4">Residential Junk Removal</h3>
+							<p class="text-gray-600 mb-6">Furniture removal, appliance removal, garage cleanouts, and estate cleanouts throughout Denton TX.</p>
+							<a href="/residential" class="text-red-600 font-semibold hover:text-red-700 transition duration-300">
+								Learn More <i class="fas fa-arrow-right ml-1"></i>
+							</a>
+						</div>
+						<div class="service-item bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition duration-300 border border-gray-100">
+							<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+								<i class="fas fa-building text-blue-600 text-2xl"></i>
+							</div>
+							<h3 class="text-xl font-bold text-gray-900 mb-4">Commercial Debris Removal</h3>
+							<p class="text-gray-600 mb-6">Office cleanouts, construction debris removal, and bulk trash removal for Denton businesses.</p>
+							<a href="/commercial" class="text-red-600 font-semibold hover:text-red-700 transition duration-300">
+								Learn More <i class="fas fa-arrow-right ml-1"></i>
+							</a>
+						</div>
+						<div class="service-item bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition duration-300 border border-gray-100">
+							<div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+								<i class="fas fa-clock text-green-600 text-2xl"></i>
+							</div>
+							<h3 class="text-xl font-bold text-gray-900 mb-4">Same Day Junk Pickup</h3>
+							<p class="text-gray-600 mb-6">Fast junk removal Denton TX with same-day service available. Call for immediate pickup.</p>
+							<a href="/same-day" class="text-red-600 font-semibold hover:text-red-700 transition duration-300">
+								Learn More <i class="fas fa-arrow-right ml-1"></i>
+							</a>
+						</div>
+						<div class="service-item bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition duration-300 border border-gray-100">
+							<div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
+								<i class="fas fa-recycle text-yellow-600 text-2xl"></i>
+							</div>
+							<h3 class="text-xl font-bold text-gray-900 mb-4">Eco-Friendly Disposal</h3>
+							<p class="text-gray-600 mb-6">Professional trash hauling with recycling and donation services in Denton, Texas.</p>
+							<a href="/recycling" class="text-red-600 font-semibold hover:text-red-700 transition duration-300">
+								Learn More <i class="fas fa-arrow-right ml-1"></i>
+							</a>
+						</div>
 					</div>
-					<div class="service-item">
-						<h4>Same Day Junk Pickup</h4>
-						<p>Fast junk removal Denton TX with same-day service available. Call for immediate pickup.</p>
+				</div>
+			</section>
+
+			<!-- Why Choose Us Section -->
+			<section class="py-20 bg-gray-100">
+				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+					<div class="text-center mb-16">
+						<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Why Choose JunkAway Pro?</h2>
+						<p class="text-xl text-gray-600">Denton's most trusted junk removal service</p>
 					</div>
-					<div class="service-item">
-						<h4>Eco-Friendly Disposal</h4>
-						<p>Professional trash hauling with recycling and donation services in Denton, Texas.</p>
+					<div class="grid md:grid-cols-3 gap-8">
+						<div class="text-center">
+							<div class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
+								<i class="fas fa-medal text-white text-3xl"></i>
+							</div>
+							<h3 class="text-2xl font-bold text-gray-900 mb-4">Licensed & Insured</h3>
+							<p class="text-gray-600">Fully licensed and insured for your peace of mind. Professional service you can trust.</p>
+						</div>
+						<div class="text-center">
+							<div class="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+								<i class="fas fa-leaf text-white text-3xl"></i>
+							</div>
+							<h3 class="text-2xl font-bold text-gray-900 mb-4">Eco-Friendly</h3>
+							<p class="text-gray-600">We recycle and donate whenever possible, keeping items out of landfills.</p>
+						</div>
+						<div class="text-center">
+							<div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+								<i class="fas fa-bolt text-white text-3xl"></i>
+							</div>
+							<h3 class="text-2xl font-bold text-gray-900 mb-4">Fast Service</h3>
+							<p class="text-gray-600">Same-day and next-day service available. We work around your schedule.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Testimonials Section -->
+			<section class="py-20 bg-white">
+				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+					<div class="text-center mb-16">
+						<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">What Our Customers Say</h2>
+						<p class="text-xl text-gray-600">Don't just take our word for it - hear from satisfied customers in Denton</p>
+					</div>
+					<div class="grid md:grid-cols-3 gap-8">
+						<div class="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+							<div class="flex items-center mb-4">
+								<div class="flex text-yellow-400">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<span class="ml-2 text-gray-600 font-medium">5.0</span>
+							</div>
+							<p class="text-gray-600 mb-6 italic">"JunkAway Pro was amazing! They showed up on time, were professional, and cleaned out my entire garage in under 2 hours. Highly recommend!"</p>
+							<div class="flex items-center">
+								<div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+									<i class="fas fa-user text-red-600"></i>
+								</div>
+								<div class="ml-4">
+									<h4 class="font-semibold text-gray-900">Sarah M.</h4>
+									<p class="text-gray-600 text-sm">Denton Homeowner</p>
+								</div>
+							</div>
+						</div>
+						<div class="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+							<div class="flex items-center mb-4">
+								<div class="flex text-yellow-400">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<span class="ml-2 text-gray-600 font-medium">5.0</span>
+							</div>
+							<p class="text-gray-600 mb-6 italic">"Great service for our office cleanout. They handled everything professionally and donated what they could. Will definitely use again!"</p>
+							<div class="flex items-center">
+								<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+									<i class="fas fa-user-tie text-blue-600"></i>
+								</div>
+								<div class="ml-4">
+									<h4 class="font-semibold text-gray-900">Mike R.</h4>
+									<p class="text-gray-600 text-sm">Business Owner</p>
+								</div>
+							</div>
+						</div>
+						<div class="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+							<div class="flex items-center mb-4">
+								<div class="flex text-yellow-400">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<span class="ml-2 text-gray-600 font-medium">5.0</span>
+							</div>
+							<p class="text-gray-600 mb-6 italic">"Called them for same-day service and they actually showed up! Fair pricing and very courteous team. Couldn't be happier."</p>
+							<div class="flex items-center">
+								<div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+									<i class="fas fa-user text-green-600"></i>
+								</div>
+								<div class="ml-4">
+									<h4 class="font-semibold text-gray-900">Jessica L.</h4>
+									<p class="text-gray-600 text-sm">Satisfied Customer</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA Section -->
+			<section id="quote" class="py-20 bg-red-600 text-white">
+				<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+					<h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Get Started?</h2>
+					<p class="text-xl mb-8 text-red-100">Get your free quote today and see why Denton chooses JunkAway Pro</p>
+					<div class="flex flex-col sm:flex-row gap-4 justify-center">
+						<a href="tel:940-555-0123" class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition duration-300 shadow-lg">
+							<i class="fas fa-phone mr-2"></i>
+							Call (940) 555-0123
+						</a>
+						<a href="/pricing" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-red-600 transition duration-300">
+							<i class="fas fa-calculator mr-2"></i>
+							Get Online Quote
+						</a>
 					</div>
 				</div>
 			</section>
 		</main>
 		
-		<footer>
-			<p>&copy; 2024 JunkAway Pro. All rights reserved.</p>
+		<footer class="bg-gray-900 text-white py-12">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="grid md:grid-cols-4 gap-8">
+					<div class="col-span-2">
+						<h3 class="text-3xl font-bold text-red-500 mb-4">JunkAway Pro</h3>
+						<p class="text-gray-300 mb-4">Denton's premier junk removal service. Licensed, insured, and eco-friendly.</p>
+						<div class="flex space-x-4">
+							<a href="tel:940-555-0123" class="text-yellow-400 hover:text-yellow-300 transition duration-300">
+								<i class="fas fa-phone text-lg"></i>
+							</a>
+							<a href="#" class="text-gray-400 hover:text-white transition duration-300">
+								<i class="fab fa-facebook text-lg"></i>
+							</a>
+							<a href="#" class="text-gray-400 hover:text-white transition duration-300">
+								<i class="fab fa-google text-lg"></i>
+							</a>
+						</div>
+					</div>
+					<div>
+						<h4 class="text-lg font-semibold mb-4">Services</h4>
+						<ul class="space-y-2 text-gray-300">
+							<li><a href="/residential" class="hover:text-white transition duration-300">Residential</a></li>
+							<li><a href="/commercial" class="hover:text-white transition duration-300">Commercial</a></li>
+							<li><a href="/same-day" class="hover:text-white transition duration-300">Same Day</a></li>
+							<li><a href="/heavy-items" class="hover:text-white transition duration-300">Heavy Items</a></li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="text-lg font-semibold mb-4">Company</h4>
+						<ul class="space-y-2 text-gray-300">
+							<li><a href="/about" class="hover:text-white transition duration-300">About Us</a></li>
+							<li><a href="/service-areas" class="hover:text-white transition duration-300">Service Areas</a></li>
+							<li><a href="/pricing" class="hover:text-white transition duration-300">Pricing</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+					<p>&copy; 2024 JunkAway Pro. All rights reserved. | Licensed & Insured in Denton, TX</p>
+				</div>
+			</div>
 		</footer>
 		
-		<style>
-			* {
-				margin: 0;
-				padding: 0;
-				box-sizing: border-box;
-			}
-			
-			body {
-				font-family: Arial, sans-serif;
-				line-height: 1.6;
-				color: #333;
-			}
-			
-			header {
-				background: #2c3e50;
-				color: white;
-				padding: 1rem 0;
-			}
-			
-			nav {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				max-width: 1200px;
-				margin: 0 auto;
-				padding: 0 2rem;
-			}
-			
-			nav ul {
-				display: flex;
-				list-style: none;
-				gap: 2rem;
-			}
-			
-			nav a {
-				color: white;
-				text-decoration: none;
-				transition: color 0.3s;
-			}
-			
-			nav a:hover {
-				color: #3498db;
-			}
-			
-			.dropdown {
-				position: relative;
-			}
-			
-			.dropdown-content {
-				display: none;
-				position: absolute;
-				background: #34495e;
-				min-width: 200px;
-				box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-				z-index: 1000;
-				border-radius: 5px;
-				top: 100%;
-				left: 0;
-				padding: 0.5rem 0;
-			}
-			
-			.dropdown-content a {
-				color: white;
-				padding: 0.8rem 1.2rem;
-				text-decoration: none;
-				display: block;
-				transition: background 0.3s;
-			}
-			
-			.dropdown-content a:hover {
-				background: #2c3e50;
-				color: #3498db;
-			}
-			
-			.dropdown:hover .dropdown-content {
-				display: block;
-			}
-			
-			main {
-				max-width: 1200px;
-				margin: 0 auto;
-				padding: 2rem;
-			}
-			
-			.hero {
-				text-align: center;
-				padding: 4rem 0;
-				background: linear-gradient(135deg, #74b9ff, #0984e3);
-				color: white;
-				margin: -2rem -2rem 2rem -2rem;
-				border-radius: 0 0 20px 20px;
-			}
-			
-			.hero h2 {
-				font-size: 3rem;
-				margin-bottom: 1rem;
-			}
-			
-			.hero p {
-				font-size: 1.2rem;
-				margin-bottom: 2rem;
-			}
-			
-			.cta-button {
-				background: #00b894;
-				color: white;
-				padding: 1rem 2rem;
-				text-decoration: none;
-				border-radius: 5px;
-				font-weight: bold;
-				transition: background 0.3s;
-			}
-			
-			.cta-button:hover {
-				background: #00a085;
-			}
-			
-			.services {
-				margin-top: 4rem;
-			}
-			
-			.services h3 {
-				text-align: center;
-				margin-bottom: 2rem;
-				font-size: 2rem;
-			}
-			
-			.service-grid {
-				display: grid;
-				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-				gap: 2rem;
-			}
-			
-			.service-item {
-				background: #f8f9fa;
-				padding: 2rem;
-				border-radius: 10px;
-				box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-			}
-			
-			.service-item h4 {
-				color: #2c3e50;
-				margin-bottom: 1rem;
-			}
-			
-			footer {
-				background: #2c3e50;
-				color: white;
-				text-align: center;
-				padding: 2rem 0;
-				margin-top: 4rem;
-			}
-		</style>
 	</body>
 </html>
